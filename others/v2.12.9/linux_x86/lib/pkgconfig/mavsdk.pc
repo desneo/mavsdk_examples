@@ -1,0 +1,11 @@
+prefix=/home/zsh/practise/sourceCode/2.12.9_mavsdk/MAVSDK/install
+exec_prefix=/home/zsh/practise/sourceCode/2.12.9_mavsdk/MAVSDK/install/bin
+libdir=/home/zsh/practise/sourceCode/2.12.9_mavsdk/MAVSDK/install/lib
+includedir=/home/zsh/practise/sourceCode/2.12.9_mavsdk/MAVSDK/install/include
+
+Name: MAVSDK
+Description: API and library for MAVLink compatible systems written in C++17
+Version: 2.12.9
+Requires.private: libcurl jsoncpp tinyxml2
+Libs: -L"${libdir}" -lmavsdk
+Cflags: -I"${includedir}" -I"${includedir}/mavsdk"

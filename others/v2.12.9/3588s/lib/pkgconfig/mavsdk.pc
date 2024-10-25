@@ -1,0 +1,11 @@
+prefix=/home/ninetripod/sourcecode/MAVSDK/install
+exec_prefix=/home/ninetripod/sourcecode/MAVSDK/install/bin
+libdir=/home/ninetripod/sourcecode/MAVSDK/install/lib
+includedir=/home/ninetripod/sourcecode/MAVSDK/install/include
+
+Name: MAVSDK
+Description: API and library for MAVLink compatible systems written in C++17
+Version: 2.12.9
+Requires.private: libcurl jsoncpp tinyxml2
+Libs: -L"${libdir}" -lmavsdk
+Cflags: -I"${includedir}" -I"${includedir}/mavsdk"
