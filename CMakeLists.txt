@@ -3,10 +3,16 @@ project(mavsdk_test)
 
 set(CMAKE_CXX_STANDARD 17)
 
+# 默认编译行版本
+set(PLATE_FORM linux_x86)
+if(${CMAKE_CXX_LIBRARY_ARCHITECTURE} STREQUAL "aarch64-linux-gnu")
+    set(PLATE_FORM 3588s)
+endif()
+
 # 引入boost库
 # include_directories(E:/practise/3part/boost_1_83_0)
 set(3RDPART_LAB /home/zsh/svn_0624/main/3rdpart_lab)
-set(MAVSDK_DIR ${3RDPART_LAB}/mavsdk/v2.12.9/linux_x86)
+set(MAVSDK_DIR ${3RDPART_LAB}/mavsdk/v2.12.9/${PLATE_FORM})
 
 include_directories(${MAVSDK_DIR}/include)
 include_directories(${MAVSDK_DIR}/include/mavsdk)
