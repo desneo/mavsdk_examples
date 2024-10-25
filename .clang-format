@@ -1,0 +1,3 @@
+BasedOnStyle: "Google"   # Google, LLVM, Mozilla, WebKit, Chromium, Microsoft
+ColumnLimit: 120         # 0 means no column limit
+IndentWidth: 4
