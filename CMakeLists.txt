@@ -22,10 +22,13 @@ link_directories(${MAVSDK_DIR}/lib)
 link_libraries(mavsdk)
 
 # 更新参数的程序
-add_executable(updateparam updateparam.cpp)
+add_executable(updatefcparam updatefcparam.cpp)
+add_executable(getfcparam getfcparam.cpp)
 add_executable(updategeofence updategeofence.cpp)
+add_executable(cleargeofence cleargeofence.cpp)
 add_executable(downloadfclog downloadfclog.cpp)
 add_executable(waypoints_test test2_waypoints.cpp)
+# add_executable(test test.cpp)
 
 # 设置 log库的路径
 include_directories(${3RDPART_LAB}/plog/plog-1.1.10/include)
